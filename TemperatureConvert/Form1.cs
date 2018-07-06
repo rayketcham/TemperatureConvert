@@ -10,7 +10,6 @@ using System.Windows.Forms;
 //Created by Ray Ketcham
 //Date: 7/5/2018
 //Class: CST-117
-
 namespace TemperatureConvert
 {
     public partial class Form1 : Form
@@ -19,18 +18,7 @@ namespace TemperatureConvert
         {
             InitializeComponent();
         }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            double C;
-            double F;
-
-            C = double.Parse(finput1.Text);
-            F = (C * 2) + 30;
-
-            label3.Text = F.ToString(label3.Text);
-        }
-
-        private void exit1_Click(object sender, EventArgs e)
+         private void exit1_Click(object sender, EventArgs e)
         {
          //Closes the application
          this.Close();
@@ -58,8 +46,24 @@ namespace TemperatureConvert
             F = double.Parse(finput1.Text);
             C = 5.0 / 9.0 * (F - 32);
 
-            label4.Text = C.ToString(label4.Text);
+            label3.Text = C.ToString(label3.Text);
          
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            double C;
+            double F;
+
+            C = double.Parse(cinput1.Text);
+            F = (C * 1.8) + 32;
+
+            label4.Text = F.ToString(label4.Text);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
 
         }
     }

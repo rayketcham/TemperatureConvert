@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button2 = new System.Windows.Forms.Button();
             this.exit1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -38,97 +39,81 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(15, 100);
+            resources.ApplyResources(this.button2, "button2");
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(103, 23);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "Convert to C";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // exit1
             // 
-            this.exit1.Location = new System.Drawing.Point(199, 280);
+            resources.ApplyResources(this.exit1, "exit1");
             this.exit1.Name = "exit1";
-            this.exit1.Size = new System.Drawing.Size(103, 23);
-            this.exit1.TabIndex = 6;
-            this.exit1.Text = "Exit";
             this.exit1.UseVisualStyleBackColor = true;
             this.exit1.Click += new System.EventHandler(this.exit1_Click);
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 77);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 13);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Fahrenheit";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 172);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 13);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Celsius";
             // 
             // clear1
             // 
-            this.clear1.Location = new System.Drawing.Point(15, 280);
+            resources.ApplyResources(this.clear1, "clear1");
             this.clear1.Name = "clear1";
-            this.clear1.Size = new System.Drawing.Size(103, 23);
-            this.clear1.TabIndex = 12;
-            this.clear1.Text = "Clear Input";
             this.clear1.UseVisualStyleBackColor = true;
             this.clear1.Click += new System.EventHandler(this.clear1_Click);
             // 
             // finput1
             // 
-            this.finput1.Location = new System.Drawing.Point(75, 74);
+            resources.ApplyResources(this.finput1, "finput1");
             this.finput1.Name = "finput1";
-            this.finput1.Size = new System.Drawing.Size(100, 20);
-            this.finput1.TabIndex = 13;
             // 
             // cinput1
             // 
-            this.cinput1.Location = new System.Drawing.Point(75, 172);
+            resources.ApplyResources(this.cinput1, "cinput1");
             this.cinput1.Name = "cinput1";
-            this.cinput1.Size = new System.Drawing.Size(100, 20);
-            this.cinput1.TabIndex = 14;
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(213, 74);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 20);
-            this.label3.TabIndex = 15;
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(213, 172);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 20);
-            this.label4.TabIndex = 16;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(15, 198);
+            resources.ApplyResources(this.button1, "button1");
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Convert to F";
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(314, 324);
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -139,9 +124,12 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.exit1);
             this.Controls.Add(this.button2);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Form1";
-            this.Text = "Temperature Converter";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -158,6 +146,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
