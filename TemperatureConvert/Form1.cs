@@ -43,13 +43,13 @@ namespace TemperatureConvert
             cinput1.Text = "";
             label4.Text = "";
          }
-
+        //
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void button2_Click_1(object sender, EventArgs e)
         {
 
             double C;
@@ -58,7 +58,7 @@ namespace TemperatureConvert
             F = double.Parse(finput1.Text);
             C = 5.0 / 9.0 * (F - 32);
 
-            label3.Text = F.ToString(label3.Text);
+            label4.Text = C.ToString(label4.Text);
          
 
         }

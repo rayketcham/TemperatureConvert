@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.covert1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.exit1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -40,15 +40,15 @@
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // covert1
+            // button2
             // 
-            this.covert1.Location = new System.Drawing.Point(12, 198);
-            this.covert1.Name = "covert1";
-            this.covert1.Size = new System.Drawing.Size(103, 23);
-            this.covert1.TabIndex = 2;
-            this.covert1.Text = "Convert";
-            this.covert1.UseVisualStyleBackColor = true;
-            this.covert1.Click += new System.EventHandler(this.button1_Click);
+            this.button2.Location = new System.Drawing.Point(15, 100);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(103, 23);
+            this.button2.TabIndex = 17;
+            this.button2.Text = "Convert to C";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // exit1
             // 
@@ -118,13 +118,11 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(15, 100);
+            this.button1.Location = new System.Drawing.Point(15, 198);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(103, 23);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Convert";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Convert to F";
             // 
             // Form1
             // 
@@ -140,7 +138,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.exit1);
-            this.Controls.Add(this.covert1);
+            this.Controls.Add(this.button2);
             this.Name = "Form1";
             this.Text = "Temperature Converter";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -150,7 +148,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button covert1;
+        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button exit1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
